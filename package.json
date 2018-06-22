@@ -1,0 +1,40 @@
+{
+  "name": "nanomiddleware",
+  "version": "1.0.0",
+  "description": "Simple middleware engine",
+  "source": "src/index.js",
+  "main": "dist/nanomiddleware.js",
+  "module": "dist/nanomiddleware.m.js",
+  "browser": "dist/nanomiddleware.umd.js",
+  "repository": "https://github.com/tiaanduplessis/nanomiddleware",
+  "author": "Tiaan du Plessis",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "build": "microbundle"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "middleware",
+    "engine",
+    "nano"
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0",
+    "microbundle": "^0.4.4",
+    "standard": "^11.0.1"
+  },
+  "babel": {
+    "presets": ["env"]
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
